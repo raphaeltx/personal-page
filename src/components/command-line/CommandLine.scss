@@ -1,0 +1,24 @@
+.command-line-container {
+    font-size: 20px;
+    padding: 3px;
+
+    .userHost {
+        color: #00ffff;
+    }
+
+    .homeDirectory {
+        color: aqua;
+    }
+
+    .pathSeparator {
+        color: #fff;
+    }
+
+    .promptSymbol {
+        color: #fff;
+    }
+
+    .prompt {
+        color: #7CFC00;
+    }
+}
