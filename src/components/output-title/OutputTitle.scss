@@ -1,7 +1,27 @@
-.output-title{
-    .ascii-art {
-        color: #fff;
-        font-size: 17px;
-        margin-bottom: 34px;
+.output-title-container {
+    display: flex;
+    justify-content: flex-start;
+
+    .welcome,
+    .to-the-void {
+        .ascii-art {
+            color: #00ffff;
+            font-size: 17px;
+            margin-bottom: 34px;
+            margin-right: 20px;
+        }
+    }
+
+    @media (max-width: 600px) {
+        display: block;
+        margin-bottom: 25px;
+
+        .welcome,
+        .to-the-void {
+            .ascii-art {
+                margin-bottom: 10px;
+                font-size: 7px !important;
+            }
+        }
     }
 }

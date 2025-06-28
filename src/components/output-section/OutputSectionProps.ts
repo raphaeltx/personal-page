@@ -1,8 +1,8 @@
 /**
- * @interface List
- * @description List interface of the OutputSection component
+ * @interface InfoDataProp
+ * @description InfoDataProp interface of the OutputSection component
  */
-interface List {
+interface InfoDataProp {
   text: string;
   link?: string;
 }
@@ -13,8 +13,8 @@ interface List {
  */
 interface OutputSectionProps {
   title: string;
-  list: List[];
+  list: InfoDataProp[];
   isLink: boolean;
 }
 
-export type { OutputSectionProps, List };
+export type { OutputSectionProps, InfoDataProp };

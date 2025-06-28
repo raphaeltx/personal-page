@@ -1,5 +1,4 @@
 .command-line-container {
-    font-size: 20px;
     padding: 3px;
 
     .userHost {
@@ -20,5 +19,29 @@
 
     .prompt {
         color: #7CFC00;
+    }
+
+    .blinking-cursor {
+        display: inline-block;
+        width: 1ch;
+        margin-bottom: 4px;
+        background: #33ff33;
+        color: #33ff33;
+        font-size: 15px;
+        vertical-align: middle;
+        animation: blink 1s steps(1) infinite;
+    }
+
+    @keyframes blink {
+
+        0%,
+        50% {
+            opacity: 1;
+        }
+
+        51%,
+        100% {
+            opacity: 0;
+        }
     }
 }

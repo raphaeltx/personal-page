@@ -1,5 +1,5 @@
 import React from "react";
-import { List, OutputSectionProps } from "./OutputSectionProps";
+import { InfoDataProp, OutputSectionProps } from "./OutputSectionProps";
 
 /**
  * OutputSection component displays a list of items, either as links or roles.
@@ -16,19 +16,19 @@ const OutputSection: React.FC<OutputSectionProps> = ({
       <p className="output-title">{title}</p>
       {isLink ? (
         <div className="output-items">
-          {list.map((item: List) => (
-            <p key={item.text}>
+          {list.map((item: InfoDataProp) => (
+            <div key={item.text}>
               <span>{item.text} → </span>
-              <a href={item.link} target="_blank" rel="noopener noreferrer">
+              <a href={item.link} className="output-link">
                 {item.link}
               </a>
-            </p>
+            </div>
           ))}
         </div>
       ) : (
         <div className="output-items">
-          {list.map((item: List) => (
-            <p key={item.text}>{item.text}</p>
+          {list.map((item: InfoDataProp) => (
+            <div key={item.text}>{item.text}</div>
           ))}
         </div>
       )}
