@@ -7,3 +7,22 @@ html,
   background: #0a0c0e;
   font-family: 'Fira Mono', 'Consolas', 'Monaco', 'Menlo', 'Liberation Mono', 'Courier New', monospace;
 }
+
+::-webkit-scrollbar {
+  width: 10px;
+  background: #181a1b;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #33ff33;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #27c427;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #33ff33 #181a1b;
+}

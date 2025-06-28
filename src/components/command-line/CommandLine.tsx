@@ -7,7 +7,7 @@ import "./CommandLine.scss";
  * @param param0 - The props for the component.
  * @returns The rendered component.
  */
-const CommandLine: React.FC<CommandLineProps> = ({ prompt }) => {
+const CommandLine: React.FC<CommandLineProps> = ({ prompt, showCursor }) => {
   const userHost = "raph@raph";
   const homeDirectory = "~";
   const promptSymbol = "$";
@@ -20,6 +20,7 @@ const CommandLine: React.FC<CommandLineProps> = ({ prompt }) => {
       <span className="homeDirectory">{homeDirectory}</span>
       <span className="promptSymbol">{promptSymbol}</span>
       <span className="prompt"> {prompt}</span>
+      {showCursor && <span className="blinking-cursor">{"|"}</span>}
     </div>
   );
 };

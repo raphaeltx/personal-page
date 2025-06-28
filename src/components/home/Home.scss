@@ -9,27 +9,14 @@
   .developer-info {
     color: #fff;
     margin-top: 10px;
+  }
 
-    .roles {
-      font-size: 14px;
-      color: #ccc;
-      margin-left: 20px;
-    }
+  .emoji {
+    font-family: 'Apple Color Emoji', 'Segoe UI Emoji', 'Noto Color Emoji', 'EmojiOne', 'Twemoji', sans-serif;
+  }
 
-    .tech-stack {
-      font-size: 14px;
-      color: #ccc;
-      margin-left: 20px;
-    }
-
-    .links {
-      font-size: 14px;
-      color: #ccc;
-      margin-left: 20px;
-    }
-
-    .emoji {
-      font-family: 'Apple Color Emoji', 'Segoe UI Emoji', 'Noto Color Emoji', 'EmojiOne', 'Twemoji', sans-serif;
-    }
+  @media (max-width: 350px) {
+    padding: 10px;
+    font-size: 10px !important;
   }
 }
